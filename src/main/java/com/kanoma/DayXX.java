@@ -1,3 +1,13 @@
+/**
+ * Cette classe est un template pour les jours de l'avent de code.
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
 package com.kanoma;
 
 import java.io.File;
@@ -13,7 +23,9 @@ public class DayXX {
     private static final Logger logger = LogManager.getLogger(DayXX.class);
     public static void main(String[] args){
         var startTimer = Instant.now();
-        String day = "";
+
+        // remplacer XX par le numéro du jour
+        String day = "XX";
         File inputFile = new File("src/main/resources/DAY/"+day+".txt");
         partOne(inputFile);
 
