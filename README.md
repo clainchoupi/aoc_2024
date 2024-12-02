@@ -14,3 +14,4 @@ Template : https://github.com/clainchoupi/aoc_template
 | Jour 	| Réussite ?	| Temps d'exécution 	| A retenir 	|
 |---	|---	|---	|---	|
 | J01 	| ✅ / ✅ 	| 153 ms 	| Très simple 	|
+| J02 	| ✅ / ✅ 	| 1123 ms 	| Fonction récursive pour la part2, pas vu dès le début... 	|
