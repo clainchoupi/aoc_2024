@@ -20,7 +20,6 @@ public class Day04 {
         var startTimer = Instant.now();
         File inputFile = new File("src/main/resources/DAY/"+day+".txt");
         //File inputFile = new File("src/main/resources/sample.txt");
-       
         
         readData(inputFile);
         
@@ -143,7 +142,7 @@ public class Day04 {
 
         for (int row = 1; row < rows - 1; row++) {
             for (int col = 1; col < cols - 1; col++) {
-                // Check if the current cell is 'A' and forms a crossing pattern
+                // Recherche de la lettre A
                 if (grid[row][col] == 'A') {
                     if (isDiagonalCross(grid, row, col)) {
                         result++;
@@ -157,22 +156,29 @@ public class Day04 {
 
     public static boolean isDiagonalCross(char[][] grid, int row, int col) {
         int nbTrue = 0;
-        // Check the diagonal down-right and up-left (M at (row-1, col-1) and S at (row+1, col+1))
+        
+        // Verifie si on a un M en haut à gauche et un S en bas à droite
         boolean downRight = grid[row - 1][col - 1] == 'M' && grid[row + 1][col + 1] == 'S';
         if (downRight) nbTrue++;
 
-        // Check the diagonal down-left and up-right (M at (row-1, col+1) and S at (row+1, col-1))
+        // Verifie si on a un M en haut à droite et un S en bas à gauche
         boolean downLeft = grid[row - 1][col + 1] == 'M' && grid[row + 1][col - 1] == 'S';
         if (downLeft) nbTrue++;
 
-        //Add upLeft and upRight
+        // Verifie si on a un M en bas à gauche et un S en haut à droite
         boolean upRight = grid[row + 1][col - 1] == 'M' && grid[row - 1][col + 1] == 'S';
         if (upRight) nbTrue++;
 
+        // Verifie si on a un M en bas à droite et un S en haut à gauche
         boolean upLeft = grid[row + 1][col + 1] == 'M' && grid[row - 1][col - 1] == 'S';
         if (upLeft) nbTrue++;
 
-        //Count if two of the four diagonals are true
+        // Compte si deux vrais
+        // On peut avoir : 
+        // M.M   |   M.S   |   S.M   |   S.S
+        // .A.   |   .A.   |   .A.   |   .A.
+        // S.S   |   M.S   |   S.M   |   M.M
+        // Il faut donc que deux des quatres diagonales soient vraies
         return nbTrue == 2;
     }
 }
