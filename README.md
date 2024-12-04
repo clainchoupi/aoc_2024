@@ -14,5 +14,6 @@ Template : https://github.com/clainchoupi/aoc_template
 | Jour 	| Réussite ?	| Temps d'exécution 	| Temps réal 	| A retenir 	|
 |---	|---	|---	|---	|---	|
 | J01 	| ✅ / ✅ 	| 153 ms 	|---	| Très simple 	|
-| J02 	| ✅ / ✅ 	| 1123 ms 	|1h	| Fonction récursive pour la part2, pas vu dès le début... 	|
-| J02 	| ✅ / ✅ 	| 69 ms 	|Plus de 2h	| Perdu dans les expressions régulières, deux cas non gérés au début : les reprises après sauts de lignes et les lignes qui terminent par don't()xxx mais sans do() 	|
+| J02 	| ✅ / ✅ 	| 1123 ms 	| 1h	| Fonction récursive pour la part2, pas vu dès le début... 	|
+| J03 	| ✅ / ✅ 	| 69 ms 	| Plus de 2h	| Perdu dans les expressions régulières, deux cas non gérés au début : les reprises après sauts de lignes et les lignes qui terminent par don't()xxx mais sans do() 	|
+| J04 	| ✅ / ✅ 	| 31 ms 	| 20 minutes	| Avec ChatGPT, proposition intéressante de donner des directions pour chercher autour des lettres ! A garder :)  	|
