@@ -19,3 +19,4 @@ Template : https://github.com/clainchoupi/aoc_template
 | J04 	| ✅ / ✅ 	| 31 ms 	| 20 minutes	| Avec ChatGPT, proposition intéressante de donner des directions pour chercher autour des lettres ! A garder :)  	|
 | J05 	| ✅ / ✅ 	| 190 ms 	| 1h	| Algo ok sur le jeu de données complet mais KO sur le sample :D Chance parce que dans le complet toutes les pages ont une regle !!  	|
 | J06 	| ✅ / ❌ 	| 177 ms 	| 1h45	| Envie de tester la rotation de grille, je m'y suis bien perdu... Difficile de corriger les algos alors que je ne voyais plus où j'étais. Pas motivé pour faire la partie2 en lisant l'énoncé... 	|
+| J07 	| ✅ / ✅ 	| 4969 ms 	| 2h	| Tentative de représentation avec des arbres ratée. Refait avec un calcul récursif plus simple. Part 2 fait en 2 minutes en rajoutant juste l'opérateur et la concaténation 	|
